@@ -1,8 +1,5 @@
 # P3 Openclassrooms
 
-## Bonjour
+##Dynamisez une page web avec des animations CSS
 
-> Ohmyfood
-
-- a
-- b
+> Projet Ohmyfood
