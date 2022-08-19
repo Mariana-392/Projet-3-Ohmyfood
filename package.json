@@ -1,0 +1,19 @@
+{
+  "name": "projet-3-ohmyfood",
+  "version": "1.0.0",
+  "description": "##Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariana-392/Projet-3-Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mariana-392/Projet-3-Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Mariana-392/Projet-3-Ohmyfood#readme"
+}
