@@ -1,15 +1,11 @@
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$background: #F6F6F6;
-$font1: Roboto, serif;
-$font2: Shrikhand, serif;
+@import "./utils/variables.scss";
+@import "./layouts/form.scss";
 
-
-body{
+body {
     font-family: $font1;
     color:black;
     max-width: 768px;
+    margin: 0 auto;
 }
 
 header {
@@ -21,4 +17,27 @@ header {
         margin-right: auto;
         width: 45%;
     }
+}
+
+.menu {
+    text-align: center;
+    background-color: $background;
+    width: 100%;
+    h2{
+        font-weight: bold;
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    p{
+        padding-left: 35px;
+        padding-right: 35px;
+        font-weight: lighter;
+        font-size: 18px;
+    }
+}
+
+.btn{
+    background: linear-gradient($color-secondary, $color-primary)
 }
