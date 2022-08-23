@@ -4,7 +4,18 @@ $color-tertiary: #99E2D0;
 $background: #F6F6F6;
 
 body{
-    background-color: $background;
     font-family: Roboto, sans serif;
     color:black;
+    max-width: 768px;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+    }
 }
