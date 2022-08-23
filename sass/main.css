@@ -60,4 +60,31 @@ header img {
 
 .picture {
   width: 100%;
+}
+
+section {
+  background: #F6F6F6;
+}
+section .card {
+  width: 90%;
+  max-width: 100%;
+  margin-bottom: 15px;
+  background: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+section .card img {
+  height: 150px;
+  width: 150%;
+  position: relative;
+  max-width: 100%;
+  max-height: 70%;
+  border-radius: 10px 10px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section span {
+  position: absolute;
 }/*# sourceMappingURL=main.css.map */
