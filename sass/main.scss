@@ -2,9 +2,12 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $background: #F6F6F6;
+$font1: Roboto, serif;
+$font2: Shrikhand, serif;
+
 
 body{
-    font-family: Roboto, sans serif;
+    font-family: $font1;
     color:black;
     max-width: 768px;
 }
