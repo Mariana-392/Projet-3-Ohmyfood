@@ -139,4 +139,18 @@ ul li .number {
 ul li .fa-solid {
   padding-left: 40px;
   padding-right: 20px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+  color: white;
+}
+footer ul {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+footer ul li {
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */
