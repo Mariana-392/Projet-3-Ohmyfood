@@ -25,11 +25,11 @@ form input {
   position: absolute;
   background: #99E2D0;
   z-index: 1;
-  border-radius: 4px;
+  border-radius: 3px;
   color: #008766;
+  font-weight: bold;
   right: 15px;
   top: 15px;
-  padding: 6px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 8px;
