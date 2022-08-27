@@ -83,6 +83,8 @@ header img {
 
 section {
   background: #F6F6F6;
+  padding-top: 2em;
+  padding-bottom: 4em;
 }
 section .card {
   width: 90%;
@@ -103,6 +105,28 @@ section .card img {
   border-radius: 10px 10px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+section .card .card-description {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  position: relative;
+  padding: 10px;
+}
+section .card .card-description h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+section .card .card-description p {
+  font-size: 1em;
+  font-weight: lighter;
+}
+section .card .card-description .fa-regular {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 24px;
 }
 
 ul {

@@ -48,25 +48,55 @@ header {
 
 section {
     background: $main-backgrd;
+    padding-top: 2em;
+    padding-bottom: 4em;
 
     .card{
         width: 90%;
-    max-width: 100%;
-    margin-bottom: 15px;
-    background: white;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+        max-width: 100%;
+        margin-bottom: 15px;
+        background: white;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
 
         img{
             height: 150px;
-    width: 150%;
-    position: relative;
-    max-width: 100%;
-    max-height: 70%;
-    border-radius: 10px 10px 0px 0px;
-    object-fit: cover;
+            width: 150%;
+            position: relative;
+            max-width: 100%;
+            max-height: 70%;
+            border-radius: 10px 10px 0px 0px;
+            object-fit: cover;
+        }
+
+        .card-description{
+            display: flex;
+            flex-direction: column;
+            line-height: 0;
+            position: relative;
+            padding: 10px;
+
+            h3{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 1.1em;
+            }
+
+            p{
+                font-size: 1em;
+                font-weight: lighter;
+            }
+
+            .fa-regular{
+                position: absolute;
+                top: 18px;
+                right: 25px;
+                font-size: 24px;
+
+            }
+
         }
 }}
 
