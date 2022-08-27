@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap" rel="stylesheet"> 
@@ -22,10 +23,11 @@
 <!--Main-->
 
     <main>
-        <img src="../images/restaurants/a-la-francaise.jpg" alt="photographie d'un plat du restaurant À la française">
-        <h2>À la française</h2>
-        <i class="fa-solid fa-heart"></i>
-        
+        <img class="picture" src="../images/restaurants/a-la-francaise.jpg" alt="photographie d'un plat du restaurant À la française">
+        <div class="main-title">
+            <h2>À la française</h2>
+            <i class="fa-regular fa-heart"></i>
+        </div>
     <!--Entrées-->
 
         <section>
@@ -102,7 +104,10 @@
                     <span><i class="fa-solid fa-circle-check"></i></span>
                 </article>
         </section>
-        <button>Commander</button>
+
+        <section>
+            <button class="btn btn-gradient">Commander</button>
+        </section>
 
     </main>
 

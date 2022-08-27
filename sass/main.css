@@ -48,6 +48,15 @@ body {
 header {
   margin-top: 20px;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+header .fa-arrow-left {
+  position: absolute;
+  align-self: center;
+  left: 20px;
+  font-size: 1.3em;
 }
 header img {
   display: block;
