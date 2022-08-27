@@ -100,7 +100,7 @@ section .card {
   border-radius: 10px;
 }
 section .card img {
-  height: 150px;
+  height: 170px;
   width: 150%;
   position: relative;
   max-width: 100%;
