@@ -36,6 +36,10 @@ form input {
   padding-bottom: 8px;
   border: none;
   font-size: 16px;
+  display: none;
+}
+.btn-card.active {
+  display: inline-block;
 }
 
 .btn-commander {

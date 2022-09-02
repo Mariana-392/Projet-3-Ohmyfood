@@ -16,7 +16,7 @@
         z-index: 1;
         border-radius: 3px;
         color: $card-btn-font;
-        font-weight: bold;
+        font-weight: bold; 
         right: 15px;
         top: 15px;
         padding-left: 15px;
@@ -24,6 +24,10 @@
         padding-top: 8px;
         padding-bottom: 8px;
         @include btn;
+        display: none;
+            &.active{
+                display: inline-block;
+            }
     }
 
     .btn-commander{
