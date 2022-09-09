@@ -342,6 +342,7 @@ main ul li {
   width: 95%;
   align-items: center;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 main ul li .number {
   position: absolute;
