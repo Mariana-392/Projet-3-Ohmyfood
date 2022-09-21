@@ -78,7 +78,7 @@ main{
     justify-content: space-between;
     background-color: $main-backgrd;
     border-radius: 35px 35px 0px 0px;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin-top: -55px;
 
@@ -173,15 +173,16 @@ section {
 
 //card-menu//
 .card-menu{
-    display: flex;
-    flex-direction: column;
     line-height: 0;
-    padding-left: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
     box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: padding-right 450ms ease-in-out;
 
     h4{
-        margin-bottom: 10px;
         font-size: 1em;
     }
 
@@ -190,17 +191,41 @@ section {
     }
 
     .price{
-        display: flex;
         position: absolute;
         bottom: 8px;
         right: 20px;
         font-weight: bold;
+        transition: padding-right 450ms ease-in-out;
     }
 
     span{
-        display: none;
+        border-radius: 0px 15px 15px 0px;
+        background: lightblue;
+        position: absolute;
+        width: 20px;
+        height: 35px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -50px;
+        top: 0;
+        opacity: 0;
+        transition: transform 450ms ease-in-out;
     }
 }
+
+.card-menu:hover {
+padding-right: 140px;
+}
+.card-menu:hover .price{
+    padding-right: 75px;
+}
+.card-menu:hover span{
+    opacity: 1;
+    transform: translate(-50px);
+}
+
 
 main ul {
     padding-left: 0px;
@@ -274,3 +299,4 @@ footer{
         }
         }
 }
+
