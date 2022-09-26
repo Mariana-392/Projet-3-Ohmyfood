@@ -207,15 +207,25 @@ section {
     }
 
     .fa-circle-check{
-        border-radius: 0px 15px 15px 0px;
-        background: lightblue;
-        position: absolute;
-        width: 20px;
-        height: 35px;
-        padding: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        font-size: 1.3em;
+        color: white;
+        opacity: 0;
+        transition: transform 450ms ease-in-out;
+    }
+
+    .check{
+        border-radius: 0px 15px 15px 0px;
+        background: $clr-itemsmenu;
+        position: absolute;
+        width: 25px;
+        height: 40px;
+        padding: 20px;
         right: -50px;
         top: 0;
         opacity: 0;
@@ -227,12 +237,16 @@ section {
     padding-right: 140px;
 }
 .card-menu:hover .price{
-    padding-right: 75px;
+    padding-right: 65px;
 }
-.card-menu:hover .fa-circle-check{
+.card-menu:hover .check{
     opacity: 1;
     transform: translate(-50px);
     
+}
+.card-menu:hover .fa-circle-check{
+    opacity: 1;
+    transform: rotate(360deg);
 }
 
 

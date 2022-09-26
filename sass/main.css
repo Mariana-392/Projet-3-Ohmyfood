@@ -354,15 +354,24 @@ section .card .card-description .fa-regular {
   transition: padding-right 450ms ease-in-out;
 }
 .card-menu .fa-circle-check {
-  border-radius: 0px 15px 15px 0px;
-  background: lightblue;
-  position: absolute;
-  width: 20px;
-  height: 35px;
-  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 1.3em;
+  color: white;
+  opacity: 0;
+  transition: transform 450ms ease-in-out;
+}
+.card-menu .check {
+  border-radius: 0px 15px 15px 0px;
+  background: #99E2D0;
+  position: absolute;
+  width: 25px;
+  height: 40px;
+  padding: 20px;
   right: -50px;
   top: 0;
   opacity: 0;
@@ -374,12 +383,17 @@ section .card .card-description .fa-regular {
 }
 
 .card-menu:hover .price {
-  padding-right: 75px;
+  padding-right: 65px;
+}
+
+.card-menu:hover .check {
+  opacity: 1;
+  transform: translate(-50px);
 }
 
 .card-menu:hover .fa-circle-check {
   opacity: 1;
-  transform: translate(-50px);
+  transform: rotate(360deg);
 }
 
 main ul {
