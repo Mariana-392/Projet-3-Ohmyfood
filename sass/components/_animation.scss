@@ -70,3 +70,12 @@
     bottom:0;
     z-index:999;
 }
+
+@keyframes fade-in{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+    }
