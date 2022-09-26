@@ -2,13 +2,16 @@
 /*polices*/
 form {
   background-color: #EAEAEA;
+  padding-left: 60px;
+  box-shadow: inset 0px 2px 0px lightgrey;
 }
 form input {
   border: none;
   background: none;
-  padding: 12px;
+  padding: 14px;
   color: black;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
 .btn-gradient {
