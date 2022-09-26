@@ -9,6 +9,7 @@
         font-weight: bold;
         padding: 15px;
         @include btn;
+        @include shadow;
     }
     .btn-card {
         position: absolute;
@@ -35,6 +36,7 @@
         padding-top: 1.5em;
         padding-bottom: 4em;
         text-align: center;
+        @include shadow;
     }
 
 

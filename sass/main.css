@@ -22,6 +22,7 @@ form input {
   padding: 15px;
   border: none;
   font-size: 16px;
+  box-shadow: 3px 5px 6px lightgray;
 }
 
 .btn-card {
@@ -50,6 +51,7 @@ form input {
   padding-top: 1.5em;
   padding-bottom: 4em;
   text-align: center;
+  box-shadow: 3px 5px 6px lightgray;
 }
 
 .circle-line {
@@ -259,6 +261,7 @@ section .card {
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
+  box-shadow: 3px 5px 6px lightgray;
 }
 section .card img {
   height: 170px;
@@ -372,6 +375,7 @@ main ul li {
   align-items: center;
   margin-bottom: 20px;
   margin-left: 10px;
+  box-shadow: 3px 5px 6px lightgray;
 }
 main ul li .number {
   position: absolute;
