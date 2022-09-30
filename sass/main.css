@@ -152,6 +152,21 @@ form input {
   z-index: 999;
 }
 
+.entree {
+  -webkit-animation: fade-in 1s ease-in-out;
+          animation: fade-in 1s ease-in-out;
+}
+
+.plat {
+  -webkit-animation: fade-in 3s ease-in-out;
+          animation: fade-in 3s ease-in-out;
+}
+
+.dessert {
+  -webkit-animation: fade-in 5s ease-in-out;
+          animation: fade-in 5s ease-in-out;
+}
+
 @-webkit-keyframes fade-in {
   from {
     opacity: 0;
@@ -166,6 +181,44 @@ form input {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+.fa-heart:hover {
+  -webkit-animation: heart 0.8s ease-in-out;
+          animation: heart 0.8s ease-in-out;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
     opacity: 1;
   }
 }
