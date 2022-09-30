@@ -23,7 +23,9 @@ header {
         position: absolute;
         align-self: center;
         left: 20px;
+        top: 10px;
         font-size: 1.3em;
+        color: black;
     }
 
     img {
@@ -319,6 +321,10 @@ footer{
                 .fa-handshake-angle{
                     font-size: 0.6em;
                     padding-right: 12px;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
                 }
         }
         }
