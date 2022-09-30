@@ -138,9 +138,27 @@ form input {
     opacity: 0;
   }
 }
+@-webkit-keyframes content {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes content {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
+  }
+}
 #content {
   -webkit-animation: contentcircle 3s;
           animation: contentcircle 3s;
+  -webkit-animation: content 3s;
+          animation: content 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   width: 100%;
@@ -322,6 +340,10 @@ main .title-menu {
 
 section {
   background: #F6F6F6;
+}
+section a {
+  text-decoration: none;
+  color: black;
 }
 section h2 {
   padding-left: 20px;

@@ -110,6 +110,11 @@ main{
 section {
     background: $main-backgrd;
 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
     h2{
         padding-left: 20px;
     }
