@@ -12,6 +12,7 @@
         padding: 15px;
         @include btn;
         @include shadow;
+        
     }
     .btn-card {
         position: absolute;
@@ -41,6 +42,7 @@
         @include shadow;
     }
 
-
-
+.btn:hover{
+@include shadowhover;
+}
 
