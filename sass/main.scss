@@ -296,6 +296,11 @@ main ul {
         }
     }
 }
+body > main:nth-child(3) > h2:nth-child(2) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 footer{
     background-color: $footer-backgrd;

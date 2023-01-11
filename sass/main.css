@@ -514,6 +514,12 @@ main ul li .fa-solid {
   padding-right: 20px;
 }
 
+body > main:nth-child(3) > h2:nth-child(2) {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
   background-color: #353535;
   padding: 20px;
