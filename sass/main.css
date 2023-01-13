@@ -25,6 +25,10 @@ form input {
   cursor: pointer;
   box-shadow: 3px 5px 6px lightgray;
 }
+.btn-gradient:hover {
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.363);
+  background: linear-gradient(#fa94dd, #a77add);
+}
 
 .btn-card {
   position: absolute;
@@ -47,6 +51,11 @@ form input {
 .btn-card.active {
   display: inline-block;
 }
+.btn-card:hover {
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.363);
+  background: #ace0d3;
+  color: #39a187;
+}
 
 .btn-commander {
   background-color: #F6F6F6;
@@ -54,10 +63,6 @@ form input {
   padding-bottom: 4em;
   text-align: center;
   box-shadow: 3px 5px 6px lightgray;
-}
-
-.btn:hover {
-  box-shadow: 3px 5px 6px rgba(32, 31, 31, 0.363);
 }
 
 .circle-line {
@@ -208,17 +213,62 @@ form input {
     opacity: 1;
   }
 }
-.fa-heart:hover {
-  -webkit-animation: heart 0.8s ease-in-out;
-          animation: heart 0.8s ease-in-out;
+.hearts {
+  cursor: pointer;
+}
+
+.hearts:hover .heart-empty {
+  -webkit-animation: hearts 0.8s ease-in-out forwards;
+          animation: hearts 0.8s ease-in-out forwards;
+}
+
+.hearts:hover .heart-full {
+  -webkit-animation: heart 0.8s ease-out forwards;
+          animation: heart 0.8s ease-out forwards;
   font-weight: bold;
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
 }
 
 @-webkit-keyframes heart {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scaleX(0.3);
+    opacity: 0.3;
+  }
+  66% {
+    transform: scaleX(0.6);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scaleX(0.3);
+    opacity: 0.3;
+  }
+  66% {
+    transform: scaleX(0.6);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes hearts {
   0% {
     opacity: 0;
   }
@@ -232,8 +282,7 @@ form input {
     opacity: 1;
   }
 }
-
-@keyframes heart {
+@keyframes hearts {
   0% {
     opacity: 0;
   }
@@ -255,11 +304,15 @@ body {
 }
 
 header {
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: row;
   position: relative;
+}
+header h1 {
+  font-family: Shrikhand, serif;
+  margin: auto;
 }
 header .fa-arrow-left {
   position: absolute;
@@ -293,12 +346,11 @@ header img {
 .menu p {
   padding-left: 35px;
   padding-right: 35px;
-  font-weight: lighter;
   font-size: 18px;
 }
 
 main .title-menu {
-  font-weight: lighter;
+  font-weight: normal;
   text-transform: uppercase;
   padding-left: 20px;
   font-size: 1em;
@@ -328,12 +380,20 @@ main .title-menu {
   padding-left: 20px;
   font-weight: normal;
 }
-.main-title .fa-regular {
+.main-title .heart-empty {
   position: absolute;
   top: 18px;
   right: 25px;
   font-size: 30px;
   padding: 10px;
+}
+.main-title .heart-full {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 30px;
+  padding: 10px;
+  opacity: 0;
 }
 
 .picture {
@@ -351,7 +411,9 @@ section a {
   color: black;
 }
 section h2 {
-  padding-left: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 section .card {
   width: 90%;
@@ -388,13 +450,19 @@ section .card .card-description h3 {
 }
 section .card .card-description p {
   font-size: 1em;
-  font-weight: lighter;
 }
-section .card .card-description .fa-regular {
+section .card .card-description .heart-empty {
   position: absolute;
   top: 18px;
   right: 25px;
   font-size: 30px;
+}
+section .card .card-description .heart-full {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 30px;
+  opacity: 0;
 }
 
 .section-restaurant {
@@ -423,7 +491,6 @@ section .card .card-description .fa-regular {
   text-overflow: ellipsis;
 }
 .card-menu p {
-  font-weight: lighter;
   margin-top: 5px;
   margin-bottom: 8px;
   overflow: hidden;
@@ -499,6 +566,16 @@ main ul li {
   margin-left: 10px;
   box-shadow: 3px 5px 6px lightgray;
 }
+main ul li:hover {
+  background: #f2eafb;
+  cursor: pointer;
+}
+main ul li:hover .fa-solid {
+  color: #9356DC;
+}
+main ul li p {
+  font-weight: bold;
+}
 main ul li .number {
   position: absolute;
   left: -10px;
@@ -516,6 +593,7 @@ main ul li .number {
 main ul li .fa-solid {
   padding-left: 40px;
   padding-right: 20px;
+  color: grey;
 }
 
 body > main:nth-child(3) > h2:nth-child(2) {

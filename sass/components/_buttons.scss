@@ -12,6 +12,10 @@
         padding: 15px;
         @include btn;
         @include shadow;
+            &:hover{
+                @include shadowhover;
+                background: linear-gradient(#fa94dd, #a77add);
+                }
         
     }
     .btn-card {
@@ -32,6 +36,11 @@
             &.active{
                 display: inline-block;
             }
+            &:hover{
+                @include shadowhover;
+                background: #ace0d3;
+                color: #39a187;
+                }
     }
 
     .btn-commander{
@@ -42,7 +51,5 @@
         @include shadow;
     }
 
-.btn:hover{
-@include shadowhover;
-}
+
 
